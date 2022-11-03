@@ -61,6 +61,7 @@ export default function Home() {
         </li>
       </ul>
       <h2>Current Projects</h2>
+      <p>For more details check out the projects tab</p>
       <ul>
         <li>TCR-Epitope Binding Prediction with ML</li>
         <li>Natural Terrain Generation for Games</li>
