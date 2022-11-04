@@ -1,0 +1,29 @@
+.links {
+  width: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.links>* {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.content {
+  display: flex;
+}
+
+.hindent {
+  padding-left: calc(4ch - 1.5em);
+}
+
+.links>*>* {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.project {
+  margin-block-end: 1em;
+}

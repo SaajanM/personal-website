@@ -1,0 +1,30 @@
+.collapsible_header>h2::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 0.5ch solid transparent;
+  border-bottom: 0.5ch solid transparent;
+  border-left: 0.5ch solid var(--body-color);
+  margin-right: -0.5ch;
+  transform: translateX(-1ch) rotate(90deg);
+  transition: transform 0.25s ease-out;
+}
+
+.collapsible_header.collapsed>h2::before {
+  transform: translateX(-1ch);
+
+}
+
+.collapsible_header>div {
+  overflow-y: hidden;
+  transition: max-height 0.25s ease-out;
+}
+
+.collapsible_header>div>ul {
+  margin-bottom: 0;
+}
+
+.collapsible_header.collapsed>div {
+  max-height: 0px;
+}
