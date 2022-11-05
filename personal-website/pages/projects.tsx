@@ -1,10 +1,36 @@
 import Project from "../components/Project/project";
 import ProjectCollection from "../components/ProjectCollection/projectcollection";
+import { Data } from "./api/get_projects"
+import useSWR from 'swr';
+
+const fetcher = (url: string) => fetch(url).then(r => r.json())
+
+const mdToJSX = (data?: Data,) => {
+  if (!data) return;
+  let res: JSX.Element[] = []
+  for (let c = 0; c < data.categories.length; c++) {
+    let collection = data.categories[c];
+    let projects: JSX.Element[] = []
+    for (let p = 0; p < collection.projects.length; p++) {
+      let project = collection.projects[p];
+      projects.push(
+        <Project key={p} title={project.title} deploy={project.deployment} github={project.github}>{project.description}</Project>
+      )
+    }
+    res.push(
+      <ProjectCollection collapsible={collection.collapsible} key={c} heading={collection.heading} description={collection.description}>{projects}</ProjectCollection>
+    )
+  }
+  return res;
+}
 
 export default function Projects() {
+  const { data } = useSWR<Data>('/api/get_projects', fetcher)
+  const projects = mdToJSX(data);
+
   return (
     <>
-      <ProjectCollection collapsible heading="Current Projects" description="These projects are under works and do not have showcases">
+      {/* <ProjectCollection collapsible heading="Current Projects" description="These projects are under works and do not have showcases">
         <Project title="TCR-Epitope Binding Prediction with ML">
           I am developing a model to predict the binding affinity between TCR protein complexes
           and epitopes in the immune system with the ASU Biodesign Institute. This model
@@ -54,7 +80,8 @@ export default function Projects() {
           generated on the map showing directions and distance. This used Djikstra's
           algorithm to calculate pathing and uses React for the UI.
         </Project>
-      </ProjectCollection>
+      </ProjectCollection> */}
+      {projects}
     </>
   );
 }
