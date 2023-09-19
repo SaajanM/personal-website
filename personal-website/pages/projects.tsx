@@ -14,7 +14,7 @@ const mdToJSX = (data?: Data,) => {
     for (let p = 0; p < collection.projects.length; p++) {
       let project = collection.projects[p];
       projects.push(
-        <Project key={p} title={project.title} deploy={project.deployment} github={project.github}>{project.description}</Project>
+        <Project key={p} title={project.title} deploy={project.deploy} github={project.github}>{project.description}</Project>
       )
     }
     res.push(

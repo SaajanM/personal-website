@@ -10,7 +10,7 @@ type Project = {
   title: string,
   description: string,
   github?: string,
-  deployment?: string
+  deploy?: string
 }
 
 type Category = {
@@ -52,7 +52,7 @@ export default async function handler(
         for (let t in tags) {
           let [key, val] = tags[t].split("=");
           if (!(key && val)) continue;
-          key = key.trim()
+          key = key.trim();
           if (!validKeys.includes(key as vKeyType)) continue;
           let verifiedKey = key as vKeyType;
           val = val.trim().match(/"(.*)"/)?.[1] || "NO VALUE";
