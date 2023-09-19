@@ -12,12 +12,13 @@ export default function Home() {
         I am a passionate undergraduate student at Arizona State University, studying
         Computer Science and Mathematics. I enjoy studying novel ways to model and
         simulate multi agent systens, natural phenomena, and intelligent agents. Within
-        the next couple years I hope to start a Ph.D with a focus in one of these topics.
+        the next couple years I hope to start a Ph.D or persue research with a focus in
+        one of these topics.
       </p>
       <p>
         Outside of school, I enjoy hiking and rock climbing with friends. I'm also a
         foodie, eager to try new and exciting dishes. Ocasionally, I like to find litrpg
-        fictions to read in order to help motivate my ideas for worlbuilding.
+        fictions to read in order to help motivate my ideas for worldbuilding.
       </p>
       <h2>Interests & Exploratory Topics</h2>
       <ul>
