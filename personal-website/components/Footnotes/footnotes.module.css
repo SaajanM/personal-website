@@ -1,0 +1,48 @@
+.footnoteContainer {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.otherPagesContainer {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.otherPagesList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.otherPagesList>p {
+    display: block;
+    flex-basis: 26%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-top: 0;
+}
+
+.copyright {
+    width: 30%;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    text-align: end !important;
+}
