@@ -6,10 +6,11 @@ type ProjectCollectionProps = {
   description?: string,
   children?: ReactNode
   collapsible?: boolean
+  startCollapsed?: boolean
 }
 
 export default function ProjectCollection(props: ProjectCollectionProps) {
-  let [collapsed, setCollapsed] = useState(true);
+  let [collapsed, setCollapsed] = useState(props.startCollapsed ?? true);
   let [contentHeight, setContentHeight] = useState(0);
   let contentRef = useRef<HTMLUListElement>(null);
   useEffect(() => {
