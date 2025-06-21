@@ -46,12 +46,6 @@ export default function Home() {
           </ul>
         </li>
       </ul>
-      <h2>Current Projects</h2>
-      <p>For more details check out the <a href='/projects'>projects</a> tab</p>
-      <ul>
-        <li>Teaching Tools for Theoretical Computer Science</li>
-        <li>Natural Terrain Generation for Games</li>
-      </ul>
     </div>
   )
 }
