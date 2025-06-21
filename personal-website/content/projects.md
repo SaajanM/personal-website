@@ -1,6 +1,14 @@
 # Current Projects
 These projects are under works and/or do not have showcases
 
+## Home Lab
+Learning docker, Proxmox, and other virtualization software. Exploring software defined
+networking by implementing various network & routing protocols from the ground up.
+
+---
+# Other Projects
+A list of past and postponed projects that lack production environments
+
 ## Tools for Teaching Theoretical Computer Science | github="https://github.com/DaymudeLab/CSE355-MachineDesign"
 I helped Professor Joshua Daymude to develop Arizona State University's first online
 offering of CSE355: Intro to Theoretical Computer Science. One of my responsibilities
@@ -16,10 +24,6 @@ needs of data and increase the density of storage, the project utilizes a proced
 decomposes one hexagon into seven on zoom. The tiles are indexed for fast querying in a
 spatial database. The backend is written in Rust and a sample client uses Unity with C#.
 
----
-# Archived Projects
-A list of past and postponed projects that lack production environments
-
 ## Novel LL1 Parsing Library | github="https://github.com/CS-Cafe/nocap"
 The goal of this project was/is to learn more about formal languages. The aim was
 to develop an all in one suite of tools that would enable developers to create LL1
@@ -31,17 +35,17 @@ revamp it are in the works.
 I worked with a group of students to create a social media application that
 measures and shares water consumption with friends. The aim was to encourage healthy
 drinking habits amongst users. Key features included the ability to set and monitor
-hydration goals, view other users status, and gain seasonal bonus rewards based on region
+hydration goals, view other user's status, and gain seasonal bonus rewards based on region
 and time of year. This application had a C# frontend and backend, interfacing with
 a PostgreSQL database to keep track of user information.
 
 ## Data Compression via Learned Data Structures
 As part of the ASU CS Capstone Program, I worked closely with Professor Jia Zou and
 several other students to research and study the compressibility of large database systems.
-We looked at the theoretical guarantees of neural networks in regards to learning data
+We looked at the theoretical guarantees of neural networks with regards to learning data
 distributions that underpin a query to a database. We are also aiming to improve
 upon existing methods of data compression as well as provide our own theoretical
-guarantees. You can find the conference paper <a href="https://arxiv.org/pdf/2401.12393.pdf">here</a>
+guarantees.
 
 ---
 
